@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, PermissionsAndroid, Platform, Alert } from 'react-native';
 import MapView, { PROVIDER_GOOGLE, Polygon, Marker } from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
-
+import Logo from "../assets/arrow.png"
 export const getCurrentLocation = () =>
     new Promise((resolve, reject) => {
         Geolocation.getCurrentPosition(
@@ -99,7 +99,7 @@ const Tracker = () => {
                     key={`arrow-${i}`}
                     coordinate={midpoint}
                     anchor={{ x: 0.5, y: 0.5 }}
-                    image={require('../assets/arrow.png')}
+                    image={Logo}
                 />
             );
         }

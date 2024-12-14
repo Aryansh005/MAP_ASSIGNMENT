@@ -8,14 +8,14 @@
 import React from 'react';
 import { SafeAreaView, View } from 'react-native';
 import SaverMode from './src/components/ShowSaverMode';
-import Tracker from './src/components/Tracker';
+import MapTracker from './src/components/MapTracker';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1 }}>
         <SaverMode />
-        <Tracker />
+        <MapTracker/>
       </View>
     </SafeAreaView>
   );
